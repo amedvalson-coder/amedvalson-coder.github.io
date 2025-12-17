@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hobby Suggester App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e8f5e9;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    h1 {
+      color: #4caf50;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 20px;
+    }
+    button:hover {
+      background: #388e3c;
+    }
+    #suggestion {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+    #hobbyImage {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hobby Suggester</h1>
+  <p>Feeling bored? Click the button for a random hobby idea from my passions!</p>
+  <button onclick="suggestHobby()">Suggest a Hobby</button>
+  <div id="suggestion"></div>
+  <img id="hobbyImage" src="" alt="Hobby image">
+
+  <script>
+    const hobbies = [
+      {
+        name: "Art & Painting",
+        desc: "Grab some paints and create a beautiful landscape – perfect for relaxing and expressing creativity!",
+        img: "art.jpg"  // Uses your existing image from scratch folder
+      },
+      {
+        name: "Playing the Violin",
+        desc: "Practice a beautiful melody on the violin – music that touches the soul!",
+        img: "violin.jpg"
+      },
+      {
+        name: "Crafting",
+        desc: "Make something handmade, like decorations or gifts – super satisfying DIY fun!",
+        img: "crafting.jpg"
+      },
+      {
+        name: "Dirt Biking",
+        desc: "Hit the trails for an adrenaline rush – feel the wind and conquer jumps!",
+        img: "dirtbiking.jpg"
+      },
+      {
+        name: "Hiking",
+        desc: "Explore a mountain trail and enjoy stunning views – great for adventure and peace!",
+        img: "hiking.jpg"
+      }
+    ];
+
+    function suggestHobby() {
+      const random = Math.floor(Math.random() * hobbies.length);
+      const hobby = hobbies[random];
+      document.getElementById('suggestion').innerText = `${hobby.name}: ${hobby.desc}`;
+      document.getElementById('hobbyImage').src = hobby.img;
+      document.getElementById('hobbyImage').alt = hobby.name;
+    }
+  </script>
+
+  <footer>
+    <a href="scratch.html">Back to Scratch Page</a> | 
+    <a href="../index.html">Back to Professional Portfolio</a>
+  </footer>
+</body>
+</html>
