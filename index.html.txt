@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head><title>Test</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Test Site</title>
+</head>
 <body>
-<h1>Hello World! My site is working.</h1>
+  <h1>Hello World! My site is working.</h1>
+  <p>This is my custom index.html page.</p>
 </body>
 </html>
