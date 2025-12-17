@@ -1,0 +1,40 @@
+body {
+  background-color: #e8f5e9; /* Custom light green background */
+  font-family: 'Arial', sans-serif; /* Font family */
+  color: #333; /* Font color */
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #4caf50;
+  color: white;
+}
+
+.content {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hobby-section {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}

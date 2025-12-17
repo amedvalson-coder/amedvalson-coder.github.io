@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Hobbies - Art, Violin, Crafting, Dirt Biking & Hiking</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Links your custom CSS -->
+</head>
+<body>
+  <div class="header">
+    <h1>My Hobbies & Passions</h1>
+    <p>A mix of creative expression and outdoor adventure</p>
+    <a href="#hobbies">Jump to My Hobbies List</a> <!-- On-page anchor -->
+  </div>
+
+  <div class="content">
+    <h2 id="hobbies">What I Love Doing</h2> <!-- Anchor target -->
+
+    <!-- Nested lists: ordered with unordered inside -->
+    <ol>
+      <li>Creative Hobbies
+        <ul>
+          <li>Drawing and painting beautiful scenes</li>
+          <li>Playing the violin – classical and modern pieces</li>
+          <li>Crafting handmade items like decorations and gifts</li>
+        </ul>
+      </li>
+      <li>Outdoor Adventures
+        <ul>
+          <li>Dirt biking on challenging trails</li>
+          <li>Hiking mountains and exploring nature</li>
+        </ul>
+      </li>
+    </ol>
+
+    <!-- Custom images -->
+    <div class="hobby-section">
+      <h3>Art & Painting</h3>
+      <img src="art.jpg" alt="Beautiful artwork painting">
+    </div>
+
+    <div class="hobby-section">
+      <h3>Playing Violin</h3>
+      <img src="violin.jpg" alt="Playing violin in nature">
+      <!-- Embedded YouTube video (search for a nice violin performance) -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1E4v6pM_qqU" title="Beautiful Violin Performance" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="hobby-section">
+      <h3>Crafting</h3>
+      <img src="crafting.jpg" alt="Handmade crafts">
+    </div>
+
+    <div class="hobby-section">
+      <h3>Dirt Biking</h3>
+      <img src="dirtbiking.jpg" alt="Dirt biking action">
+    </div>
+
+    <div class="hobby-section">
+      <h3>Hiking</h3>
+      <img src="hiking.jpg" alt="Hiking mountain trail">
+    </div>
+
+    <!-- Live Interactive Tableau Graph (fully interactive – about outdoor activities) -->
+    <h2>Interactive Viz: Outdoor Adventure Popularity</h2>
+    <p>Explore data on popular outdoor activities worldwide (hover, filter, zoom!)</p>
+    <div class='tableauPlaceholder' style='position: relative'>
+      <noscript><img alt='Dashboard' src='https://public.tableau.com/static/images/Out/OutdoorActivitiesDashboard/Sheet1/1_rss.png' style='border: none' /></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='OutdoorActivitiesDashboard/Sheet1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Out/OutdoorActivitiesDashboard/Sheet1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.querySelector('.tableauPlaceholder');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (vizElement) {
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <footer>
+    <p><a href="../index.html">Back to Professional Portfolio</a> | 
+       <a href="app.html">Play My Web App</a></p>
+  </footer>
+</body>
+</html>
